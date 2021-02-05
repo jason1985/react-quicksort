@@ -6,7 +6,8 @@ import Bar from "./components/Bar";
 let animations = [];
 
 export default function App() {
-  const [bars, setBars] = useState(genNums);
+  const [bars, setBars] = useState(genNums(40));
+  const [range, setRange] = useState(40);
 
   let btnRef = useRef();
   let btnRefSort = useRef();
@@ -53,7 +54,7 @@ export default function App() {
   };
 
   const reset = () => {
-    setBars(genNums);
+    setBars(genNums(range));
     animations = [];
     btnRefSort.current.removeAttribute("disabled");
   };
@@ -61,6 +62,19 @@ export default function App() {
   return (
     <>
       <h1>Quicksort</h1>
+      <label for="range">Bars</label>
+      <input
+        type="range"
+        min="2"
+        max="100"
+        id="range"
+        onChange={(e) => {
+          setBars(genNums(e.target.value));
+          setRange(e.target.value);
+        }}
+      />{" "}
+      {range}
+      <br />
       <button ref={btnRefSort} onClick={sortIt}>
         sort
       </button>
@@ -115,10 +129,10 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-const genNums = () => {
+const genNums = (num) => {
   let newArray = [];
 
-  for (let i = 0; i < 80; i++) {
+  for (let i = 0; i < num; i++) {
     newArray.push([getRandomInt(30, 400), false]);
   }
 
