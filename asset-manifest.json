@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-quicksort/static/css/main.44f4ad9a.chunk.css",
+    "main.js": "/react-quicksort/static/js/main.fcf1c1af.chunk.js",
+    "main.js.map": "/react-quicksort/static/js/main.fcf1c1af.chunk.js.map",
+    "runtime-main.js": "/react-quicksort/static/js/runtime-main.b9a94f18.js",
+    "runtime-main.js.map": "/react-quicksort/static/js/runtime-main.b9a94f18.js.map",
+    "static/js/2.8cc79504.chunk.js": "/react-quicksort/static/js/2.8cc79504.chunk.js",
+    "static/js/2.8cc79504.chunk.js.map": "/react-quicksort/static/js/2.8cc79504.chunk.js.map",
+    "index.html": "/react-quicksort/index.html",
+    "static/css/main.44f4ad9a.chunk.css.map": "/react-quicksort/static/css/main.44f4ad9a.chunk.css.map",
+    "static/js/2.8cc79504.chunk.js.LICENSE.txt": "/react-quicksort/static/js/2.8cc79504.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9a94f18.js",
+    "static/js/2.8cc79504.chunk.js",
+    "static/css/main.44f4ad9a.chunk.css",
+    "static/js/main.fcf1c1af.chunk.js"
+  ]
+}
